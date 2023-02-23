@@ -9,13 +9,14 @@ body {
 
 /*----------  Custom Properties  ----------*/
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"); /* font */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"); /* font */
 
 :root {
   --main-blue: #0065fc;
   --light-blue: #deebff;
   --grey: #d9d9d9;
   --black: rgba(0, 0, 0, 1);
+  --400-14px: 400 14px "Raleway", sans-serif;
   --400-16px: 400 16px "Raleway", sans-serif;
   --500-16px: 500 16px "Raleway", sans-serif;
   --700-16px: 700 16px "Raleway", sans-serif;
@@ -30,10 +31,9 @@ body {
 
 /*----------  Navbar  ----------*/
 
-nav {
+.nav__container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -45,6 +45,7 @@ nav {
 
 .menu {
   display: flex;
+  flex-direction: row;
   align-items: end;
   padding: 48px 77px 0px 0px;
 }
@@ -54,6 +55,7 @@ nav {
   color: var(--black);
   text-decoration: none;
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -144,6 +146,7 @@ nav {
 
 .filter-bar {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   margin: 32px 0px 35px 62px;
@@ -189,23 +192,318 @@ nav {
   background-color: var(--light-blue);
   cursor: pointer;
 }
-.info-div {
+
+/*----------  Info bar  ----------*/
+
+.info-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 35px 0 37px 59px;
 }
 
-.info-div h2 {
+.info-bar h2 {
   font: var(--400-16px);
 }
 
-#icon-info {
+.info-bar__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
   border-radius: 1000px;
   border: 1px solid var(--grey);
-  padding: 7px 12px;
   margin-right: 11px;
+}
+
+#info-bar__icon {
+  font-size: 11.75px;
   color: var(--main-blue);
+  text-align: center;
 }
 
 /*=====  End of HEADER  ======*/
+
+
+
+
+
+
+/*=============================================
+=              MAIN SECTION                  =
+=============================================*/
+
+.offers {
+  margin: 0 50px 60px 50px;
+  display: flex;
+}
+
+.offers h1 {
+  font: var(--700-22px);
+}
+
+/*----------  Hébergements à Marseille  ----------*/
+
+.offers__main {
+  width: calc(
+    (2 * (100% - 40px)) / 3
+  ); /* Deux tiers de l'espace total moins 40px d'espacement */
+  padding: 34px 44px 46px 36px;
+}
+
+.offers__main h1 {
+  margin-bottom: 23px;
+}
+
+
+.card__main {
+  width: calc(100% / 3);
+  border: 5px solid #ffffff;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out; /* Ajouter une transition pour un effet plus doux */
+}
+
+.card__main a {
+  color: var(--black);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card__main img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  height: 124px;
+  object-fit: cover;
+}
+.card__main h4 {
+  font: var(--700-16px);
+}
+.card__main p {
+  font: var(--400-14px);
+}
+
+.stars__container--main i {
+  color: var(--main-blue);
+  margin: -2px;
+  font-size: 14px;
+}
+
+.card__description--main {
+  padding: 4px 0 6px 11px;
+}
+
+.card__description--main > h4,
+p {
+  margin-bottom: 9px;
+}
+
+.card__main:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card__main:active {
+  transform: translateY(2px); /* Déplacer la carte de 2 pixels vers le bas */
+}
+
+.offers__main button{
+  font: var(--700-18px);
+  margin-top: 40px;
+  margin-left: 4px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.offers__main button:hover{
+  color: var(--main-blue);
+}
+
+.first-row, .second-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.first-row{
+  margin-bottom: 30px;
+}
+
+.card__main:nth-child(n+1):nth-child(-n+2){
+  margin-right: 31px;
+}
+/*----------  Les plus populaires  ----------*/
+
+.offers__spensored {
+  width: calc(
+    (100% - 40px) / 3
+  ); /* Un tiers de l'espace total moins 40px d'espacement */
+  margin-left: 40px;
+  padding: 41px 40px 1px 37px;
+}
+
+.offers__spensored h1 {
+  margin-bottom: 26px;
+}
+
+.title-and-icon {
+  display: flex;
+  flex-direction: row;
+}
+
+.title-and-icon i{
+  color: var(--main-blue);
+  z-index: 10000;
+}
+
+.card__spensored {
+  border-radius: 20px;
+  border: 5px solid #ffffff;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card__spensored:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card__spensored:active {
+  transform: translateY(2px); /* Déplacer la carte de 2 pixels vers le bas */
+}
+
+.card__spensored a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.card__spensored img {
+  height: 144px;
+  width: 36%;
+  border-radius: 20px 0px 0px 20px;
+  object-fit: cover;
+}
+
+.card__description--spensored {
+  padding: 16px 22px 12px 15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: var(--black);
+}
+
+.card__spensored:nth-child(n+1){
+  margin-bottom: 33px;
+}
+
+.card__description--spensored h4 {
+  font: var(--700-16px);
+  margin-bottom: 7px;
+}
+
+.card__description--spensored p {
+  font: var(--400-14px);
+}
+
+.stars__container--spensored i {
+  color: var(--main-blue);
+  margin: -2px;
+  font-size: 14px;
+}
+/*=====  End of Offers section  ======*/
+
+
+
+/*=============================================
+=            ACTIVITIES SECTION             =
+=============================================*/
+
+
+.activities{
+  margin: 60px 53px 61px 50px;
+}
+
+.activities h1{
+  font: var(--700-22px);
+  margin-bottom: 18.47px;
+}
+
+.card__activity{
+  width: 25%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.card__activity:hover{
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px); /* Déplacer la carte de 2 pixels vers le bas */
+}
+
+.card__activity a{
+  text-decoration: none;
+  color: var(--black);
+}
+
+.activities img{
+  width: 100%;
+  height: 389px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card__description--activity h4{
+  font: var(--700-16px);
+  padding: 20px 36px 21px 19px;
+}
+
+.activities-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.card__activity:nth-child(-n+3){
+  margin-right: 43px;
+}
+/*=====  End of Activities section  ======*/
+
+
+
+/*=============================================
+=            FOOTER SECTION                 =
+=============================================*/
+
+
+footer{
+  display: flex;
+  padding: 45px 0px 24px 118px;
+  margin-bottom: 27px;
+}
+
+footer h2{
+  font: var(--700-18px);
+  margin-bottom: 20px;
+}
+
+.footer__column:nth-child(-n+2){
+  margin-right: 240px;
+}
+
+.link-list li:nth-child(-n+2){
+  margin-bottom: 12px;
+}
+
+.link-list a{
+  text-decoration: none;
+  color: var(--black);
+  font: var(--400-16px);
+}
+
+.link-list a:hover{
+  text-decoration: underline;
+}
+/*=====  End of Footer section  ======*/
+
+
+
+
+

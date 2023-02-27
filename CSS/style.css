@@ -90,7 +90,7 @@ body {
   margin: 53px 0 8px 55px;
 }
 
-.header__title h3 {
+.header__title p {
   font: var(--400-16px);
   margin: 0 0 20px 55px;
 }
@@ -202,7 +202,7 @@ body {
   margin: 35px 0 37px 59px;
 }
 
-.info-bar h2 {
+.info-bar p {
   font: var(--400-16px);
 }
 
@@ -239,7 +239,7 @@ body {
   display: flex;
 }
 
-.offers h1 {
+.offers h2 {
   font: var(--700-22px);
 }
 
@@ -252,7 +252,7 @@ body {
   padding: 34px 44px 46px 36px;
 }
 
-.offers__main h1 {
+.offers__main h2 {
   margin-bottom: 23px;
 }
 
@@ -278,7 +278,7 @@ body {
   height: 124px;
   object-fit: cover;
 }
-.card__main h4 {
+.card__main h3 {
   font: var(--700-16px);
 }
 .card__main p {
@@ -295,7 +295,7 @@ body {
   padding: 4px 0 6px 11px;
 }
 
-.card__description--main > h4,
+.card__description--main > h3,
 p {
   margin-bottom: 9px;
 }
@@ -343,7 +343,7 @@ p {
   padding: 41px 40px 1px 37px;
 }
 
-.offers__spensored h1 {
+.offers__spensored h2 {
   margin-bottom: 26px;
 }
 
@@ -397,7 +397,7 @@ p {
   margin-bottom: 33px;
 }
 
-.card__description--spensored h4 {
+.card__description--spensored h3 {
   font: var(--700-16px);
   margin-bottom: 7px;
 }
@@ -424,7 +424,7 @@ p {
   margin: 60px 53px 61px 50px;
 }
 
-.activities h1{
+.activities h2{
   font: var(--700-22px);
   margin-bottom: 18.47px;
 }
@@ -451,7 +451,7 @@ p {
   border-radius: 20px 20px 0px 0px;
 }
 
-.card__description--activity h4{
+.card__description--activity h3{
   font: var(--700-16px);
   padding: 20px 36px 21px 19px;
 }
@@ -479,7 +479,7 @@ footer{
   margin-bottom: 27px;
 }
 
-footer h2{
+footer h3{
   font: var(--700-18px);
   margin-bottom: 20px;
 }

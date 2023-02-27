@@ -350,11 +350,13 @@ p {
 .title-and-icon {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .title-and-icon i{
   color: var(--main-blue);
-  z-index: 10000;
+  font-size: 18px;
 }
 
 .card__spensored {
@@ -485,7 +487,7 @@ footer h3{
 }
 
 .footer__column:nth-child(-n+2){
-  margin-right: 240px;
+  width: 30%;
 }
 
 .link-list li:nth-child(-n+2){
@@ -503,6 +505,16 @@ footer h3{
 }
 /*=====  End of Footer section  ======*/
 
+
+
+
+/*=============================================
+=            MEDIA QUERIES SECTION            =
+=============================================*/
+
+
+
+/*=====  End of Media queries section  ======*/
 
 
 

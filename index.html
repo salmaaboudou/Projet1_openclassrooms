@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/11562bc513.js"
       crossorigin="anonymous"
@@ -14,50 +20,55 @@
   <body>
     <!-- HEADER -->
     <header>
-      <div class="nav__container">
-        <img class="nav__logo" src="images/logo/Booki.png" alt="Logo Booki" />
-        <nav>
-          <ul class="menu">
-            <li>
-              <a class="menu__item menu__item--1" href="#hebergements"
-                >Hébergements</a
-              >
-            </li>
-            <li>
-              <a class="menu__item menu__item--2" href="#activites"
-                >Activités</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <a class="nav__logo" href="index.html">
+          <img src="images/logo/Booki.png" alt="Logo Booki"/>
+        </a>
+        <ul class="menu">
+          <li>
+            <a class="menu__item menu__item--1" href="#hebergements"
+              >Hébergements</a
+            >
+          </li>
+          <li>
+            <a class="menu__item menu__item--2" href="#activites">Activités</a>
+          </li>
+        </ul>
+      </nav>
       <div class="header__title">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre-ville ou en pleine nature</p>
       </div>
-      <form action="#" class="search-bar">
-        <i id="search-bar--icon" class="fa-sharp fa-solid fa-location-dot"></i>
-        <input type="text" placeholder="Marseille, France" />
-        <button type="submit" class="search-bar--button">Rechercher</button>
+      <form action="#">
+        <div class="input-search">
+          <i id="search-bar--icon" class="fa fa-location-dot"></i>
+          <input type="text" placeholder="Marseille, France" />
+          <button type="submit" class="search-bar--button">
+            <span>Rechercher</span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
       </form>
       <div class="filter-bar">
         <h2>Filtres</h2>
-        <button class="filter-bar__btn filter-bar__btn--1">
-          <i class="fa-solid fa-money-bill-wave"></i>
-          Économique
-        </button>
-        <button class="filter-bar__btn filter-bar__btn--2">
-          <i class="fa-solid fa-person"></i>
-          Familial
-        </button>
-        <button class="filter-bar__btn filter-bar__btn--3">
-          <i class="fa-solid fa-heart"></i>
-          Romantique
-        </button>
-        <button class="filter-bar__btn filter-bar__btn--4">
-          <i class="fa-solid fa-dog"></i>
-          Animaux autorisés
-        </button>
+        <div class="filter-bar__btns">
+          <button class="filter-bar__btn filter-bar__btn--1">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            Économique
+          </button>
+          <button class="filter-bar__btn filter-bar__btn--2">
+            <i class="fa-solid fa-person"></i>
+            Familial
+          </button>
+          <button class="filter-bar__btn filter-bar__btn--3">
+            <i class="fa-solid fa-heart"></i>
+            Romantique
+          </button>
+          <button class="filter-bar__btn filter-bar__btn--4">
+            <i class="fa-solid fa-dog"></i>
+            Animaux autorisés
+          </button>
+        </div>
       </div>
       <div class="info-bar">
         <div class="info-bar__container">
@@ -67,7 +78,7 @@
       </div>
     </header>
     <!-- HEBERGEMENTS À MARSEILLE -->
-    <div class="offers" id="hebergements">
+    <main class="offers" id="hebergements">
       <article class="offers__main">
         <h2>Hébergements à Marseille</h2>
         <div class="first-row">
@@ -182,7 +193,7 @@
             </a>
           </div>
         </div>
-        <button>Afficher plus</button>
+        <button class="show-more__btn">Afficher plus</button>
       </article>
       <!-- LES PLUS POPULAIRES -->
       <article class="offers__spensored">
@@ -190,74 +201,76 @@
           <h2>Les plus populaires</h2>
           <i class="fa-solid fa-chart-line"></i>
         </div>
-        <div class="card__spensored card__spensored--5">
-          <a href="#">
-            <img
-              src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
-              alt="Hôtel le soleil du matin"
-            />
-            <div class="card__description--spensored">
-              <div class="txt-container">
-                <h3>
-                  Hôtel Le soleil du <br />
-                  matin
-                </h3>
-                <p>Nuit à partir de 128€</p>
+        <div class="container-card__spensored">
+          <div class="card__spensored card__spensored--1">
+            <a href="#">
+              <img
+                src="images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                alt="Hôtel le soleil du matin"
+              />
+              <div class="card__description--spensored">
+                <div class="txt-container">
+                  <h3>
+                    Hôtel Le soleil du <br />
+                    matin
+                  </h3>
+                  <p>Nuit à partir de 128€</p>
+                </div>
+                <div class="stars__container--spensored">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
               </div>
-              <div class="stars__container--spensored">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+            </a>
+          </div>
+          <div class="card__spensored card__spensored--2">
+            <a href="#">
+              <img
+                src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                alt="Hôtel le soleil du matin"
+              />
+              <div class="card__description--spensored">
+                <div class="txt-container">
+                  <h3>
+                    Chambres d’hôtes Au <br />
+                    cœur de l’eau
+                  </h3>
+                  <p>Nuit à partir de 71€</p>
+                </div>
+                <div class="stars__container--spensored">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
               </div>
-            </div>
-          </a>
-        </div>
-        <div class="card__spensored card__spensored--4">
-          <a href="#">
-            <img
-              src="images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg"
-              alt="Hôtel le soleil du matin"
-            />
-            <div class="card__description--spensored">
-              <div class="txt-container">
-                <h3>
-                  Chambres d’hôtes Au <br />
-                  cœur de l’eau
-                </h3>
-                <p>Nuit à partir de 71€</p>
+            </a>
+          </div>
+          <div class="card__spensored card__spensored--3">
+            <a href="#">
+              <img
+                src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                alt="Hôtel le soleil du matin"
+              />
+              <div class="card__description--spensored">
+                <div class="txt-container">
+                  <h3>Hôtel Bleu et Blanc</h3>
+                  <p>Nuit à partir de 68€</p>
+                </div>
+                <div class="stars__container--spensored">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
               </div>
-              <div class="stars__container--spensored">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="card__spensored card__spensored--3">
-          <a href="#">
-            <img
-              src="images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
-              alt="Hôtel le soleil du matin"
-            />
-            <div class="card__description--spensored">
-              <div class="txt-container">
-                <h3>Hôtel Bleu et Blanc</h3>
-                <p>Nuit à partir de 68€</p>
-              </div>
-              <div class="stars__container--spensored">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </article>
-    </div>
+    </main>
     <!-- ACTVITÉS À MARSEILLE -->
     <section class="activities" id="activites">
       <h2>Activités à Marseille</h2>
@@ -276,7 +289,7 @@
         <div class="card__activity card__activity--2">
           <a href="#">
             <img
-              src="images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+              src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
               alt="Photo Vieux-Port Marseille"
             />
             <div class="card__description--activity">

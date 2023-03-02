@@ -4,14 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font1);
   list-style: none;
 } /* reset css */
 
 body {
   max-width: 1400px;
   margin: 0 auto;
-  font-family: "Raleway", sans-serif;
 }
 
 /*----------  Custom Properties  ----------*/
@@ -82,15 +80,14 @@ nav li a:hover {
   color: var(--main-blue);
 }
 
+
 nav li a:hover::before {
   content: "";
   width: 0%;
   height: 2px;
   position: absolute;
-  background: var(--primary-color);
   top: 0;
   left: 0;
-  transition: all 0.3s ease;
 }
 
 nav li a:hover::before {
@@ -98,14 +95,16 @@ nav li a:hover::before {
   width: 100%;
 }
 
+
+
 /*----------  Searchbar  ----------*/
 
-.header__title h1 {
+.search-bar__titles h1 {
   font: var(--700-22px);
   margin: 53px 0 8px 0px;
 }
 
-.header__title p {
+.search-bar__titles p {
   font: var(--400-16px);
   margin-bottom: 20px;
 }
@@ -156,6 +155,10 @@ form {
   cursor: pointer;
 }
 
+.search-bar--button:active{
+  transform: translateY(1px);
+}
+
 .search-bar--button i {
   display: none;
 }
@@ -189,6 +192,10 @@ form {
   border-radius: 25px;
   height: 45px;
   padding: 4px 20px;
+}
+
+.filter-bar__btn:active{
+  transform: translateY(2px);
 }
 
 .filter-bar i {
@@ -348,7 +355,7 @@ form {
   padding: 41px 40px 1px 37px;
 }
 
-.container-card__spensored {
+.card__spensored--container{
   display: flex;
   flex-direction: column;
 }
@@ -356,14 +363,14 @@ form {
   margin-bottom: 26px;
 }
 
-.title-and-icon {
+.offers__spensored-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
 }
 
-.title-and-icon i {
+.offers__spensored-title i {
   color: var(--main-blue);
   font-size: 18px;
 }
@@ -553,7 +560,7 @@ footer h3 {
     padding: 42px 40px;
   }
 
-  .container-card__spensored {
+  .card__spensored--container{
     display: flex;
     flex-direction: row;
   }
@@ -658,6 +665,7 @@ footer h3 {
     flex: 1 1 47%;
     font-size: 14px;
     justify-content: flex-start;
+    padding: 4px 16px;
   }
 
   

@@ -5,19 +5,19 @@ https://salmaaboudou.github.io/Projet2_openclassrooms/
 ![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white) 
 https://www.linkedin.com/in/salma-aboudou/
 
-![Instagram(https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)
+![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)
 https://www.instagram.com/salma.codes/
 
 ![Banner Booki](https://user.oc-static.com/upload/2022/06/20/16557256333819_FR_1155_P3_Banner-Booki.png)
 
 ## Booki - Trouvez votre hébergement pour des vacances de rêve 
 
-### Projet 2 - Formation en Développement Web, Openclassrooms
+## Projet 2 - Formation en Développement Web, Openclassrooms
 
 [![ForTheBadge uses-html](http://ForTheBadge.com/images/badges/uses-html.svg)](http://ForTheBadge.com)
 [![ForTheBadge uses-css](http://ForTheBadge.com/images/badges/uses-css.svg)](http://ForTheBadge.com)
 
-# Scénario 
+## Scénario 
 
 Vous débutez votre alternance en tant que développeur web au sein de la start-up Booki. 
 L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des
@@ -26,7 +26,7 @@ Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. Pou
 étroite collaboration avec Sarah, la CTO, et Loïc, l’UI designer. 
 Sarah vous envoie un e-mail pour vous présenter l’avancée du projet.
 
-# Note de synthèse – Nouveau Site Booki
+## Note de synthèse – Nouveau Site Booki
 
 ### Fonction recherche:
 ● Les usagers pourront rechercher des hébergements dans la ville de leur choix.

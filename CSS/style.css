@@ -34,7 +34,7 @@ body {
 =                     HEADER                  =
 =============================================*/
 header {
-  margin: 0 55px 37px 55px;
+  margin: 0px 55px 37px 55px;
 }
 /*----------  Navbar  ----------*/
 
@@ -71,7 +71,7 @@ nav li {
   text-align: center;
 }
 
-nav li a{
+nav li a {
   text-decoration: none;
   font: var(--400-16px);
   color: var(--black);
@@ -167,7 +167,6 @@ form {
   flex-direction: row;
   align-items: center;
   margin-bottom: 35px;
-  margin-left: 7px;
   gap: 32px;
 }
 .filter-bar h2 {
@@ -442,10 +441,11 @@ form {
   width: 25%;
   border-radius: 20px;
   object-fit: cover;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card__activity:hover {
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.3);
   transform: translateY(2px); /* Déplacer la carte de 2 pixels vers le bas */
 }
 
@@ -513,17 +513,13 @@ footer h3 {
 =            MEDIA QUERIES SECTION            =
 =============================================*/
 
-
 /*----------  Tablettes  ----------*/
 
-
-
 @media (min-width: 769px) and (max-width: 992px) {
-
-      /*----------  Header  ----------*/
+  /*----------  Header  ----------*/
 
   header {
-    margin: 44px 30px 37px 30px;
+    margin: 0px 30px 37px 30px;
   }
 
   .input-search input {
@@ -543,7 +539,7 @@ footer h3 {
     gap: 10px;
   }
 
-      /*----------  Hébergements  ----------*/
+  /*----------  Hébergements  ----------*/
 
   .offers {
     flex-wrap: wrap;
@@ -578,7 +574,7 @@ footer h3 {
     font-size: 13px;
   }
 
-      /*----------  Activités  ----------*/
+  /*----------  Activités  ----------*/
 
   .card__activity:nth-child(-n + 3) {
     margin-right: 38px;
@@ -591,16 +587,13 @@ footer h3 {
   }
 }
 
-
 /*----------  Téléphone mobile  ----------*/
 
-
-
 @media (max-width: 768px) {
-      /*----------  Header  ----------*/
+  /*----------  Header  ----------*/
 
   header {
-    margin: 21px 0px 0px 0px;
+    margin: 0px;
   }
   nav {
     flex-direction: column;
@@ -608,37 +601,130 @@ footer h3 {
   }
 
   .nav__logo {
+    margin-top: 21px;
     margin-bottom: 38px;
   }
 
-  nav ul{
+  nav ul {
     width: 100%;
     height: 50px;
   }
 
-  nav ul li{
+  nav ul li {
     width: 50%;
   }
-  
+
   nav li a:hover::before {
     top: 100%;
   }
 
-  
-
-    /*----------  Filter bar  ----------*/
-
-  .filter-bar {
-    flex-wrap: wrap;
+  .search-bar__container {
+    margin: 0px 20px;
   }
 
+  .search-bar--button i {
+    display: block;
+  }
+
+  .search-bar--button span {
+    display: none;
+  }
+
+  .input-search {
+    width: 100%;
+  }
+
+  .input-search input {
+    font-size: 16px;
+    width: 100%;
+  }
+  /*----------  Filter bar  ----------*/
+
+  .filter-bar {
+    margin-top: 34px;
+    gap: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-bar__btns{
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 3%;
+    padding: 0;
+  }
+
+  .filter-bar__btn{
+    flex: 1 1 47%;
+    font-size: 14px;
+    justify-content: flex-start;
+  }
+
+  
+  /*----------  Hébergements  ----------*/
+  
+  .offers {
+    flex-direction: column-reverse;
+    margin: 0 20px;
+  }
+
+  .offers__spensored{
+    width: 100%;
+    margin: 80px 0;
+    padding: 0;
+  }
+
+  .offers__main{
+    width: 100%;
+    padding: 0;
+  }
+
+  .first-row , .second-row{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card__main{
+    width: 100%;
+  }
+
+  
+  /*----------  Activités à marseille  ----------*/
+  
+  .activities{
+    margin: 80px 20px 0 20px;
+  }
   .activities-row {
     display: flex;
     flex-direction: column;
+    gap: 30px;
   }
-  .offers {
+  .card__activity{
+    width: 100%;
+    height:190px ;
+  }
+
+  .activities img{
+    height: 124px;
+  }
+
+  
+  /*----------  Footer  ----------*/
+  
+  footer{
     flex-direction: column;
+    padding: 0;
+    margin: 80px 20px;
+    gap: 30px;
   }
+
+  .footer__column:nth-child(-n + 2){
+    width: 100%;
+  }
+
+  
+
+  
 }
 
 /*=====  End of Media queries section  ======*/

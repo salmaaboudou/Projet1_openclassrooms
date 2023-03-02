@@ -1,8 +1,18 @@
+
+[![Website fakesite.invalid](https://img.shields.io/website-up-down-green-red/http/fakesite.invalid.svg)](http://fakesite.invalid/)
+https://salmaaboudou.github.io/Projet2_openclassrooms/
+
+![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white) 
+https://www.linkedin.com/in/salma-aboudou/
+
+![Instagram(https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)
+https://www.instagram.com/salma.codes/
+
 ![Banner Booki](https://user.oc-static.com/upload/2022/06/20/16557256333819_FR_1155_P3_Banner-Booki.png)
 
-# Transformez une maquette en site web avec HTML & CSS
+## Booki - Trouvez votre hébergement pour des vacances de rêve 
 
-## Booki - Trouvez votre hébergement pour des vacances de rêve (Projet 2 - Formation en Développement Web - Openclassrooms)
+### Projet 2 - Formation en Développement Web, Openclassrooms
 
 [![ForTheBadge uses-html](http://ForTheBadge.com/images/badges/uses-html.svg)](http://ForTheBadge.com)
 [![ForTheBadge uses-css](http://ForTheBadge.com/images/badges/uses-css.svg)](http://ForTheBadge.com)
@@ -92,4 +102,3 @@ La maquette doit être compatible avec les dernières versions de Google Chrome 
 ### Restrictions: 
 Aucun framework CSS (type BootStrap ou Tailwind CSS) ou préprocesseur CSS (type Sass ou Less) ne doit être utilisé. Aucun autre langage ne doit être utilisé (comme JavaScript, par exemple).
 
-![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)

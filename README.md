@@ -10,7 +10,7 @@ https://www.instagram.com/salma.codes/
 
 ![Banner Booki](https://user.oc-static.com/upload/2022/06/20/16557256333819_FR_1155_P3_Banner-Booki.png)
 
-## Booki - Trouvez votre hébergement pour des vacances de rêve 
+# Booki - Trouvez votre hébergement pour des vacances de rêve 
 
 ## Projet 2 - Formation en Développement Web, Openclassrooms
 

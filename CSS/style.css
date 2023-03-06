@@ -64,7 +64,7 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  font: 400 14px "Raleway", sans-serif; 
+  font: 400 16px "Raleway", sans-serif; 
   color: var(--black);
 }
 
@@ -396,7 +396,7 @@ form {
 }
 
 .card__description--spensored {
-  padding: 16px 22px 12px 15px;
+  padding: 16px 22px 10px 15px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -557,6 +557,16 @@ footer h3 {
     display: flex;
     flex-direction: row;
   }
+
+  .card__spensored img {
+    width: 50%;
+  }
+  
+
+.card__description--spensored {
+  padding: 16px 22px 0px 15px;
+
+}
 
   .card__spensored:nth-child(-n + 2) {
     margin-right: 23px;

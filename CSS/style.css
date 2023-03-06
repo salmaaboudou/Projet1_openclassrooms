@@ -19,13 +19,6 @@ body {
   --light-blue: #deebff;
   --grey: #d9d9d9;
   --black: rgba(0, 0, 0, 1);
-  --400-14px: 400 14px "Raleway", sans-serif;
-  --400-16px: 400 16px "Raleway", sans-serif;
-  --500-16px: 500 16px "Raleway", sans-serif;
-  --700-16px: 700 16px "Raleway", sans-serif;
-  --700-17px: 700 17px "Raleway", sans-serif;
-  --700-18px: 700 18px "Raleway", sans-serif;
-  --700-22px: 700 22px "Raleway", sans-serif;
 }
 
 /*=============================================
@@ -71,7 +64,7 @@ nav li {
 
 nav li a {
   text-decoration: none;
-  font: var(--400-16px);
+  font: 400 14px "Raleway", sans-serif; 
   color: var(--black);
 }
 
@@ -100,12 +93,12 @@ nav li a:hover::before {
 /*----------  Searchbar  ----------*/
 
 .search-bar__titles h1 {
-  font: var(--700-22px);
+  font:  700 22px "Raleway", sans-serif;
   margin: 53px 0 8px 0px;
 }
 
 .search-bar__titles p {
-  font: var(--400-16px);
+  font:  400 16px "Raleway", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -130,7 +123,7 @@ form {
 }
 
 .input-search input {
-  font: var(--700-18px);
+  font:  700 18px "Raleway", sans-serif;
   border: none;
   outline: none;
   width: 60%;
@@ -143,7 +136,7 @@ form {
 }
 
 .search-bar--button {
-  font: var(--700-18px);
+  font:  700 18px "Raleway", sans-serif;
   color: white;
   background: var(--main-blue);
   padding: 14px 16px 14px 16px;
@@ -173,7 +166,7 @@ form {
   gap: 32px;
 }
 .filter-bar h2 {
-  font: var(--700-18px);
+  font:  700 18px "Raleway", sans-serif;
 }
 
 .filter-bar__btns {
@@ -187,7 +180,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  font: var(--700-17px);
+  font:  700 17px "Raleway", sans-serif;
   border: 2px solid var(--grey);
   border-radius: 25px;
   height: 45px;
@@ -219,7 +212,7 @@ form {
 }
 
 .info-bar p {
-  font: var(--400-16px);
+  font:  400 16px "Raleway", sans-serif;
 }
 
 .info-bar__container {
@@ -251,7 +244,7 @@ form {
 }
 
 .offers h2 {
-  font: var(--700-22px);
+  font:  700 22px "Raleway", sans-serif;
 }
 
 /*----------  Hébergements à Marseille  ----------*/
@@ -289,10 +282,10 @@ form {
   object-fit: cover;
 }
 .card__main h3 {
-  font: var(--700-16px);
+  font:  700 16px "Raleway", sans-serif;
 }
 .card__main p {
-  font: var(--400-14px);
+  font:  400 14px "Raleway", sans-serif;
 }
 
 .stars__container--main i {
@@ -319,7 +312,7 @@ form {
 }
 
 .show-more__btn {
-  font: var(--700-18px);
+  font:  700 18px "Raleway", sans-serif;;
   margin-top: 40px;
   margin-left: 4px;
   padding: 0;
@@ -416,12 +409,12 @@ form {
 }
 
 .card__description--spensored h3 {
-  font: var(--700-16px);
+  font:  700 16px "Raleway", sans-serif;
   margin-bottom: 7px;
 }
 
 .card__description--spensored p {
-  font: var(--400-14px);
+  font:  400 14px "Raleway", sans-serif;
 }
 
 .stars__container--spensored i {
@@ -440,7 +433,7 @@ form {
 }
 
 .activities h2 {
-  font: var(--700-22px);
+  font:  700 22px "Raleway", sans-serif;
   margin-bottom: 18.47px;
 }
 
@@ -468,7 +461,7 @@ form {
 }
 
 .card__description--activity h3 {
-  font: var(--700-16px);
+  font:  700 16px "Raleway", sans-serif;
   padding: 20px 36px 21px 19px;
 }
 
@@ -493,7 +486,7 @@ footer {
 }
 
 footer h3 {
-  font: var(--700-18px);
+  font:  700 18px "Raleway", sans-serif;
   margin-bottom: 20px;
 }
 
@@ -508,7 +501,7 @@ footer h3 {
 .link-list a {
   text-decoration: none;
   color: var(--black);
-  font: var(--400-16px);
+  font:  400 16px "Raleway", sans-serif;
 }
 
 .link-list a:hover {
